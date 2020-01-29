@@ -1,0 +1,93 @@
+{
+  "name": "react-leaflet-geodesic",
+  "version": "1.0.0",
+  "description": "Geodesic curves as React compoment for Leaflet",
+  "main": "dist/react-leaflet-geodesic.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:lib && npm run build:dist && npm run build:dev",
+    "build:dist": "webpack src/index.js --output dist/react-leaflet-geodesic.min.js",
+    "build:dev": "webpack src/index.js --mode development --output dist/react-leaflet-geodesic.js",
+    "build:lib": "npm run compile:lib",
+    "clean:lib": "rm -Rf ./lib",
+    "compile:lib": "babel src --out-dir lib",
+    "prepublishOnly": "npm run build",
+    "example": "webpack-dev-server --config ./example/webpack.config.js",
+    "lint": "eslint ./src",
+    "release:major": "npm version major && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:patch": "npm version patch && git push --follow-tags",
+    "publish": "npm publish",
+    "pretty": "prettier --write \"{src,example}/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:dcdourado/react-leaflet-geodesic.git"
+  },
+  "keywords": [
+    "react",
+    "react-leaflet",
+    "react-component",
+    "leaflet",
+    "geodesic",
+    "curve",
+    "geodesic-curve"
+  ],
+  "author": "Diogo Dourado <dcdourado@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dcdourado/react-leaflet-geodesic/issues"
+  },
+  "homepage": "https://github.com/dcdourado/react-leaflet-geodesic#readme",
+  "dependencies": {
+    "leaflet.geodesic": "^2.5.2",
+    "react-leaflet": "^2.5.0"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.5.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-transform-proto-to-assign": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/plugin-transform-strict-mode": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dev-expression": "^0.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^4.2.0",
+    "flow-bin": "^0.109.0",
+    "flow-copy-source": "^2.0.8",
+    "flow-typed": "^2.6.1",
+    "html-webpack-plugin": "^3.2.0",
+    "leaflet": "^1.3.4",
+    "prettier": "^1.18.2",
+    "prettier-eslint": "^9.0.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-leaflet": "^2.5.0",
+    "warning": "^4.0.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2"
+  }
+}
