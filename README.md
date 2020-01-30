@@ -1,5 +1,4 @@
-<!-- # react-leaflet-geodesic [![npm version]] (https://www.npmjs.com/package/react-leaflet-geodesic) -->
-still adding to npm
+# react-leaflet-geodesic [![npm version](https://img.shields.io/npm/v/react-leaflet-geodesic.svg)](https://www.npmjs.com/package/react-leaflet-geodesic)
 
 Draws geodesic curves on [React-Leaflet](https://github.com/PaulLeCam/react-leaflet), which are the real minimal "line" between two coordinates of the Earth.
 
