@@ -1,1 +1,1 @@
-export { default as Geodesic } from "./Geodesic";
+export { default as GeodesicLine } from "./GeodesicLine";
