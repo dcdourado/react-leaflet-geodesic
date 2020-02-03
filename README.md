@@ -9,7 +9,7 @@ This is a part-wrap of [Leaflet.Geodesic](https://github.com/henrythasler/Leafle
 # Usage
 
 ```
-import { Geodesic } from 'react-leaflet-geodesic'
+import { GeodesicLine } from 'react-leaflet-geodesic'
 ...
 const waypoints = [
   [-33, -70],
@@ -22,7 +22,7 @@ const options = {
   color: 'red',
 }
 ...
-<Geodesic positions={waypoints} options={options} />
+<GeodesicLine positions={waypoints} options={options} />
 ...
 ```
 
